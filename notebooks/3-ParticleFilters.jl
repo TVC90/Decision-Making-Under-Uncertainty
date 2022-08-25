@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.6
+# v0.17.3
 
 using Markdown
 using InteractiveUtils
@@ -1253,7 +1253,7 @@ recorder = HistoryRecorder(max_steps=200);
 
 # ╔═╡ adb54de3-19ad-4a14-93f8-c26c1ef1c512
 md"""
-We define how to update the our beliefs using the particle filter named the `BootstrapFilter`.$^2$
+We define how to update our beliefs using the particle filter named the `BootstrapFilter`.$^2$
 """
 
 # ╔═╡ 50ba37c4-48af-447a-af73-b0603bad71db

@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.6
+# v0.17.3
 
 using Markdown
 using InteractiveUtils
@@ -320,6 +320,9 @@ begin
 	@enum Observation CRYINGₒ QUIETₒ
 end
 
+# ╔═╡ d4e78d68-6e9e-4d44-a70a-ebc678fe0fa3
+State(0)
+
 # ╔═╡ 9df137d0-f61c-11ea-0dd6-67535f3b0d52
 md"We define ourstate, action, and observation *spaces*."
 
@@ -464,7 +467,7 @@ pomdp = QuickPOMDP(CryingBaby,
 # ╔═╡ 704ea980-f4db-11ea-01db-233562722c4d
 md"""
 ### Policy
-We create a simple `Policy` type with an associated `POMDPs.action` function which always feeds the baby when we it's crying.
+We create a simple `Policy` type with an associated `POMDPs.action` function which always feeds the baby when it's crying.
 
 The `POMDPs.action(π, s)` function maps the current state $s$ (or belief state $b(s)$ for POMDPs) to an action $a$ given a policy $\pi$.
 
@@ -2237,6 +2240,7 @@ version = "0.9.1+5"
 # ╠═d0a58780-f4d2-11ea-155d-f55c848f91a8
 # ╟─be1258b0-f4db-11ea-390e-2bcc849111d0
 # ╠═f49ffe90-f4dc-11ea-1ecb-9d6e6e66d3d4
+# ╠═d4e78d68-6e9e-4d44-a70a-ebc678fe0fa3
 # ╟─9df137d0-f61c-11ea-0dd6-67535f3b0d52
 # ╟─c720f8a0-f61e-11ea-155d-c13361437a85
 # ╠═b03708f0-f61e-11ea-38c8-5945da744bff
